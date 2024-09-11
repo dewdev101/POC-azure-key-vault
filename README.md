@@ -34,6 +34,7 @@
 ```shell
  http://localhost:8080/secret
 ```  
+- #### Note :bookmark:  after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 
 #### 3. Get secrete uri
 
@@ -44,7 +45,7 @@
 ```  
 
 
-- #### Note :bookmark:  after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
+
 
 ### How to get list of vaults 
 
