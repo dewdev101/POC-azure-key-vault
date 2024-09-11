@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [API_Instruction](#API):thumbsup:
-- [Call_block_chain](#Calling_Transactions_on_the_Blockchain):thumbsup:
+- [API_Instruction](#API) :thumbsup:
+- [Call_block_chain](#Calling_Transactions_on_the_Blockchain) :thumbsup:
 
 ## API
 
@@ -34,7 +34,7 @@
 ```shell
  http://localhost:8080/secret
 ```  
-- Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
+- :white_check_mark: Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 =====================================================================
 
 ## Calling_Transactions_on_the_Blockchain
@@ -85,7 +85,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"fro
 ```
 
 This function will help you to estimate how much gas should use in the function  
-**Note** : each method will use different gas usage
+:white_check_mark: **Note** : each method will use different gas usage
  - transferFrom = 45,000 units
  - name  = 24,000 uints
 
@@ -96,7 +96,7 @@ curl -X POST --data '{"jsonrpc": "2.0","method": "eth_sendTransaction","params":
 ```
 Note you will not see destination address here, because it was encrypt to call data already
 
-example:eyes:
+example :eyes:
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{"from": "0xe8f9f81cb78f6096b10515d9d2675xxxxxxx","to": "0x402349046AA8F7e6fC355E7c8xxxxxxxxx","gas": "0xC350","gasPrice": "0xB2D05E00","data":"xxxxxxx000000000000000000000000e8f9f81cb78f6096b10515d9d26xxxxxx0000000000000000000000000e792a695b2aee2a49f654a219bdfc1c4381fbc2000000000000000000000000000000000000000000000000xxxxxxx"}],"id":9}' http://127.0.0.1:8545
 ```
