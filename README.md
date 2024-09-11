@@ -5,8 +5,8 @@
 - :thumbsup: [API_Instruction](#API) 
 - :thumbsup: [Call_block_chain](#Calling_Transactions_on_the_Blockchain) 
 
-## API
-<font color="red">This text is red!</font>
+## API :white_check_mark: :white_check_mark: :white_check_mark:
+
 ### Set up 
 
 1. **Update Secrets**
@@ -34,10 +34,10 @@
 ```shell
  http://localhost:8080/secret
 ```  
-- :white_check_mark: Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
+- :bookmark: Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 =====================================================================
 
-## Calling_Transactions_on_the_Blockchain
+## Calling_Transactions_on_the_Blockchain :white_check_mark: :white_check_mark: :white_check_mark:
 
 ### 1. Prepare the Environment
 
@@ -85,7 +85,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"fro
 ```
 
 This function will help you to estimate how much gas should use in the function  
-:white_check_mark: **Note** : each method will use different gas usage
+:bookmark: **Note** : each method will use different gas usage
  - transferFrom = 45,000 units
  - name  = 24,000 uints
 
@@ -94,7 +94,7 @@ This function will help you to estimate how much gas should use in the function
 ```shell
 curl -X POST --data '{"jsonrpc": "2.0","method": "eth_sendTransaction","params": [{"from": "`your_wallet_address`","to": "`token_contract_address`","gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
 ```
-Note you will not see destination address here, because it was encrypt to call data already
+:bookmark: Note you will not see destination address here, because it was encrypt to call data already
 
 :large_blue_circle: example
 ```shell
