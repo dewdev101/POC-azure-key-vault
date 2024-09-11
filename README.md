@@ -5,7 +5,10 @@
 - :rocket: [API_Instruction](#API) 
 - :rocket: [Call_block_chain](#Calling_Transactions_on_the_Blockchain) 
 
+
+
 ## API 
+:mushroom: :mushroom: :mushroom: :mushroom: :mushroom: :mushroom:
 
 ### Prepare the Environment
 
@@ -36,7 +39,7 @@
 ```  
 - #### Note :bookmark:  after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 
-#### 3. Get secrete uri
+#### 3. Get secret uri
 
  - Fill token that you got from 1 and fill in the Authorization (Bearer Token)
  - Call api
@@ -65,7 +68,9 @@
 
 =====================================================================
 
+
 ## Calling_Transactions_on_the_Blockchain  
+:mushroom: :mushroom: :mushroom: :mushroom: :mushroom: :mushroom: 
 
 ### 1. Prepare the Environment
 
