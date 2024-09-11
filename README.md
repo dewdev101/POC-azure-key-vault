@@ -1,16 +1,21 @@
-# How to call transaction in block chain
+# Calling Transactions on the Blockchain
 
-# Prepare state
-```shell
- fill secret in .env and docker-compose.yml
-```
-```shell
- docker compose up -d
-```
-# Get call data
- encrypt method to use when call eth_sendTransaction in eth blockchain
-```shell
- go run .
+## 1. Prepare the Environment
+
+1. **Update Secrets**
+   - Fill in the required secrets in your `.env` and `docker-compose.yml` files.
+
+2. **Start Services**
+   - Launch the Docker containers:
+     ```shell
+     docker compose up -d
+     ```
+
+## 2. Generate Call Data
+
+To generate and log the call data for the `transferFrom` function:
+   ```shell
+   go run .
 ```
 we call transferFrom function
 (you will see the log Call data in terminal)
