@@ -50,7 +50,7 @@ func main() {
 		return
 	}
 
-	// ====== pack call data to call blockchain
+	// ====== pack method transferFrom to call data to call eth_send_tr
 
 	callData, err := PackTransferFromData(from, to, value)
 	if err != nil {

@@ -33,6 +33,12 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 ```shell
 curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"from": "`your_wallet_address`","to":  "`token_contract_address`","gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
 ```
+
+example
+```shell
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"from": "0xe8f9f81cb78f6096b10515d9d2675xxxxxxx","to": "0x402349046AA8F7e6fC355E7c8xxxxxxxxx","gas": "0xC350","gasPrice": "0xB2D05E00","data":"0x23b872dd000000000000000000000000e8f9f81cb78f6096b10515d9d26750ebfeaffd5d0000000000000000000000000e792a695b2aee2a49f654a219bdfc1c4381fbc20000000000000000000000000000000000000000000000008ac7230489e80000"}],"id":9}' http://127.0.0.1:8545
+```
+
 This function will help you to estimate how much gas should use in the function
 Note : each method will use different gas usage
  - transferFrom = 45,000 units
@@ -40,6 +46,11 @@ Note : each method will use different gas usage
 
 # 6. TransferFrom token : eth_sendTransaction
 ```shell
-curl -X POST --data '{"jsonrpc": "2.0","method": "eth_sendTransaction","params": [{"from": ${your wallet address},"to": ${token contract address},"gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
+curl -X POST --data '{"jsonrpc": "2.0","method": "eth_sendTransaction","params": [{"from": "`your_wallet_address`","to": "`token_contract_address`","gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
 ```
-Note you will not see destination address here, because it was encrpy to call data already
+Note you will not see destination address here, because it was encrypt to call data already
+
+example
+```shell
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{"from": "0xe8f9f81cb78f6096b10515d9d2675xxxxxxx","to": "0x402349046AA8F7e6fC355E7c8xxxxxxxxx","gas": "0xC350","gasPrice": "0xB2D05E00","data":"xxxxxxx000000000000000000000000e8f9f81cb78f6096b10515d9d26xxxxxx0000000000000000000000000e792a695b2aee2a49f654a219bdfc1c4381fbc2000000000000000000000000000000000000000000000000xxxxxxx"}],"id":9}' http://127.0.0.1:8545
+```
