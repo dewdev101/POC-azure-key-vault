@@ -34,7 +34,34 @@
 ```shell
  http://localhost:8080/secret
 ```  
-- :bookmark: Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
+
+#### 3. Get secrete uri
+
+ - Fill token that you got from 1 and fill in the Authorization (Bearer Token)
+ - Call api
+```shell
+ http://localhost:8080/vault/secret-name
+```  
+
+
+- #### Note :bookmark:  after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
+
+### How to get list of vaults 
+
+#### 1 . Get token for getting vault list
+
+```shell
+  http://localhost:8080/token
+```
+
+#### 2. Get vault list
+
+ - Fill token that you got from 1 and fill in the Authorization (Bearer Token)
+ - Call api
+```shell
+  http://localhost:8080/vaults
+```  
+
 =====================================================================
 
 ## Calling_Transactions_on_the_Blockchain  
@@ -85,7 +112,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"fro
 ```
 
 This function will help you to estimate how much gas should use in the function  
-:bookmark: **Note** : each method will use different gas usage
+:bookmark:  **Note** : each method will use different gas usage
  - transferFrom = 45,000 units
  - name  = 24,000 uints
 
