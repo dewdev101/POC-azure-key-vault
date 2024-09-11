@@ -1,11 +1,34 @@
-# Project Title
+# POC Azure key vault
 
 ## Table of Contents
-- [Call_block_chain](#Calling Transactions on the Blockchain)
-- [Installation](#installation)
-  
+- [API_Instruction](#API)
+- [Call_block_chain](#Calling_Transactions_on_the_Blockchain)
 
-# Calling Transactions on the Blockchain
+# API
+
+1. **Update Secrets**
+   - Fill in the required secrets in your `.env`  files.
+
+2. **Start Services**
+   - Launch api:
+     ```shell
+     go run .
+     ```
+  
+# How to get secret value
+## 1 . Get token for getting secret
+```shell
+  http://localhost:8080/token/secret
+```
+## 2. Get secrete value
+ - Fill token that you got from 1 and fill in the Authorization (Bearer Token)
+ - Call api
+```shell
+ http://localhost:8080/secret
+```
+
+
+# Calling_Transactions_on_the_Blockchain
 
 ## 1. Prepare the Environment
 
