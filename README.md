@@ -12,12 +12,10 @@
      ```
 
 ## 2. Generate Call Data
-
-To generate and log the call data for the `transferFrom` function:
+To generate call data for the `transferFrom` function:
    ```shell
    go run .
 ```
-we call transferFrom function
 (you will see the log Call data in terminal)
 
 ## 3. Confirm EthSigner is up
@@ -33,9 +31,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 
 ## 5. Check estimate gas for each function : eth_estimateGas
 ```shell
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"from": ${your wallet address},"to": ${token contract address},"gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"from": "`your_wallet_address`","to":  "`token_contract_address`","gas": "0xC350","gasPrice": "0xB2D05E00","data":"call data"}],"id":9}' http://127.0.0.1:8545
 ```
-this function will help you to estimate how much gas should use in the function
+This function will help you to estimate how much gas should use in the function
 Note : each method will use different gas usage
  - transferFrom = 45,000 units
  - name  = 24,000 uints
