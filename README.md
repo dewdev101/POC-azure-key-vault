@@ -1,5 +1,13 @@
 # Test call transaction in block chain
 
+# Prepare state
+```shell
+ fill secret in .env and docker-compose.yml
+```
+```shell
+ docker compose up -d
+```
+
 # Confirm EthSigner is up
 ```shell
 curl -X GET http://127.0.0.1:8545/upcheck
