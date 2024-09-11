@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-- :thumbsup: [API_Instruction](#API) =
+- :thumbsup: [API_Instruction](#API) 
 - :thumbsup: [Call_block_chain](#Calling_Transactions_on_the_Blockchain) 
 
 ## API
-
+<span style="color: red;">This text is red.</span>
 ### Set up 
 
 1. **Update Secrets**
