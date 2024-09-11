@@ -1,0 +1,13 @@
+METAMASK_PRIVATE_KEY=xxxxxxxxxxxx
+PASSWORD=xxxxxxxxxxxx
+
+FROM_CONTRACT_ADDRESS=xxxxxxxxxxxx
+TO_CONTRACT_ADDRESS=xxxxxxxxxxxx
+AMOUNT_IN_WEI=xxxxxxxxxxxx
+
+## azure secret
+SUBSCRIPTION_ID=xxxxxxxxxxxx
+TENANT_ID=xxxxxxxxxxxx
+AZURE_SECRET_URI=xxxxxxxxxxxx
+CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxx
+CLIENT_SECRET=xxxxxxxxxxxx
