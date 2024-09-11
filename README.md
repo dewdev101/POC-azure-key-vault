@@ -1,11 +1,11 @@
 # Project Title
 
 ## Table of Contents
-- [Call_block_chain](#Calling_Transactions_on_the_Blockchain)
+- [Call_block_chain](#Calling Transactions on the Blockchain)
 - [Installation](#installation)
   
 
-# Calling_Transactions_on_the_Blockchain
+# Calling Transactions on the Blockchain
 
 ## 1. Prepare the Environment
 
