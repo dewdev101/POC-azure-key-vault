@@ -5,7 +5,7 @@
 - :thumbsup: [API_Instruction](#API) 
 - :thumbsup: [Call_block_chain](#Calling_Transactions_on_the_Blockchain) 
 
-## API :white_check_mark: :white_check_mark: :white_check_mark:
+## :white_check_mark: :white_check_mark: :white_check_mark: API 
 
 ### Set up 
 
@@ -37,7 +37,7 @@
 - :bookmark: Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 =====================================================================
 
-## Calling_Transactions_on_the_Blockchain :white_check_mark: :white_check_mark: :white_check_mark:
+## :white_check_mark: :white_check_mark: :white_check_mark: Calling_Transactions_on_the_Blockchain 
 
 ### 1. Prepare the Environment
 
