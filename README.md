@@ -34,8 +34,7 @@
 ```shell
  http://localhost:8080/secret
 ```  
-#### Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder
-#### which is used to sign in blockchain
+- Note : after you run this api, it will generate keyfile and save passwordFile in ether-singer folder  which is used to sign in blockchain
 =====================================================================
 
 ## Calling_Transactions_on_the_Blockchain
